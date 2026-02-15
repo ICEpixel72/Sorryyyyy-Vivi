@@ -1,0 +1,287 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Apology For Tanvi</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Comic Sans MS", cursive, sans-serif;
+        background: linear-gradient(135deg, #ffecd2 0%, #fcb69f 100%);
+        height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        overflow: hidden;
+      }
+
+      .container {
+        text-align: center;
+        z-index: 10;
+      }
+
+      .cute-face {
+        font-size: 8rem;
+        animation: bounce 2s ease-in-out infinite;
+        display: inline-block;
+      }
+
+      h1 {
+        font-size: 3rem;
+        color: #ff6b9d;
+        margin: 20px 0;
+        animation: wiggle 1s ease-in-out infinite;
+        text-shadow: 2px 2px 4px rgba(255, 255, 255, 0.5);
+      }
+
+      .message {
+        font-size: 1.3rem;
+        color: #ff1744;
+        margin: 20px 0;
+        animation: fadeIn 2s ease-out;
+      }
+
+      .floating-hearts {
+        position: absolute;
+        font-size: 2rem;
+        animation: floatUp 4s ease-in infinite;
+        opacity: 0;
+      }
+
+      .bear {
+        font-size: 5rem;
+        margin: 20px;
+        animation: wave 1s ease-in-out infinite;
+        display: inline-block;
+      }
+
+      .button {
+        background: #ff6b9d;
+        color: white;
+        border: none;
+        padding: 15px 40px;
+        font-size: 1.2rem;
+        border-radius: 50px;
+        cursor: pointer;
+        margin-top: 20px;
+        font-family: "Comic Sans MS", cursive;
+        box-shadow: 0 5px 15px rgba(255, 107, 157, 0.4);
+        animation: pulse 2s ease-in-out infinite;
+      }
+
+      .button:hover {
+        background: #ff1744;
+        transform: scale(1.1);
+      }
+
+      @keyframes bounce {
+        0%,
+        100% {
+          transform: translateY(0);
+        }
+        50% {
+          transform: translateY(-30px);
+        }
+      }
+
+      @keyframes wiggle {
+        0%,
+        100% {
+          transform: rotate(-3deg);
+        }
+        50% {
+          transform: rotate(3deg);
+        }
+      }
+
+      @keyframes wave {
+        0%,
+        100% {
+          transform: rotate(0deg);
+        }
+        25% {
+          transform: rotate(-15deg);
+        }
+        75% {
+          transform: rotate(15deg);
+        }
+      }
+
+      @keyframes floatUp {
+        0% {
+          bottom: -10%;
+          opacity: 1;
+          transform: translateX(0) rotate(0deg);
+        }
+        100% {
+          bottom: 110%;
+          opacity: 0;
+          transform: translateX(100px) rotate(360deg);
+        }
+      }
+
+      @keyframes fadeIn {
+        from {
+          opacity: 0;
+        }
+        to {
+          opacity: 1;
+        }
+      }
+
+      @keyframes pulse {
+        0%,
+        100% {
+          transform: scale(1);
+        }
+        50% {
+          transform: scale(1.05);
+        }
+      }
+
+      .clouds {
+        position: absolute;
+        font-size: 4rem;
+        animation: drift 20s linear infinite;
+      }
+
+      @keyframes drift {
+        from {
+          left: -10%;
+        }
+        to {
+          left: 110%;
+        }
+      }
+
+      .stars {
+        position: absolute;
+        font-size: 2rem;
+        animation: twinkle 1.5s ease-in-out infinite;
+      }
+
+      @keyframes twinkle {
+        0%,
+        100% {
+          opacity: 1;
+          transform: scale(1);
+        }
+        50% {
+          opacity: 0.3;
+          transform: scale(0.8);
+        }
+      }
+
+      #forgivenessMessage {
+        display: none;
+        font-size: 2rem;
+        color: #ff1744;
+        margin-top: 20px;
+        animation: celebrate 0.5s ease-out;
+      }
+
+      @keyframes celebrate {
+        0% {
+          transform: scale(0);
+        }
+        50% {
+          transform: scale(1.2);
+        }
+        100% {
+          transform: scale(1);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Floating hearts -->
+    <div class="floating-hearts" style="left: 10%; animation-delay: 0s">💖</div>
+    <div class="floating-hearts" style="left: 30%; animation-delay: 1s">💕</div>
+    <div class="floating-hearts" style="left: 50%; animation-delay: 2s">💗</div>
+    <div class="floating-hearts" style="left: 70%; animation-delay: 0.5s">
+      💝
+    </div>
+    <div class="floating-hearts" style="left: 90%; animation-delay: 1.5s">
+      💖
+    </div>
+
+    <!-- Clouds -->
+    <div class="clouds" style="top: 10%">☁️</div>
+    <div class="clouds" style="top: 20%; animation-delay: -10s">☁️</div>
+
+    <!-- Stars -->
+    <div class="stars" style="top: 15%; left: 15%; animation-delay: 0s">✨</div>
+    <div class="stars" style="top: 25%; right: 20%; animation-delay: 0.5s">
+      ⭐
+    </div>
+    <div class="stars" style="bottom: 20%; left: 10%; animation-delay: 1s">
+      ✨
+    </div>
+    <div class="stars" style="bottom: 30%; right: 15%; animation-delay: 1.5s">
+      ⭐
+    </div>
+
+    <div class="container">
+      <div class="cute-face">🥺</div>
+      <h1>I'm So Sorry Tanvi</h1>
+      <div class="bear">🧸</div>
+      <div class="message">
+        I was being silly and stupid... 🙈<br />
+        I really really really didn't mean to hurt you! 💔<br />
+        Can you please forgive me? 🥺👉👈
+      </div>
+      <button class="button" onclick="forgive()">
+        Click if you forgive me! 💕
+      </button>
+      <div id="forgivenessMessage">
+        Your soft side always comes back to me 😌💖
+      </div>
+    </div>
+
+    <script>
+      function forgive() {
+        document.getElementById("forgivenessMessage").style.display = "block";
+        createConfetti();
+      }
+
+      function createConfetti() {
+        for (let i = 0; i < 50; i++) {
+          setTimeout(() => {
+            const confetti = document.createElement("div");
+            const emojis = ["🎉", "💖", "✨", "🌟", "💕", "🎊", "🦋", "🌸"];
+            confetti.textContent =
+              emojis[Math.floor(Math.random() * emojis.length)];
+            confetti.style.position = "fixed";
+            confetti.style.left = Math.random() * 100 + "%";
+            confetti.style.top = "-10%";
+            confetti.style.fontSize = "2rem";
+            confetti.style.animation = "floatUp 3s ease-in forwards";
+            confetti.style.zIndex = "1000";
+            document.body.appendChild(confetti);
+
+            setTimeout(() => confetti.remove(), 3000);
+          }, i * 50);
+        }
+      }
+
+      // Continuously create floating hearts
+      setInterval(() => {
+        const heart = document.createElement("div");
+        heart.className = "floating-hearts";
+        heart.textContent = ["💖", "💕", "💗", "💝"][
+          Math.floor(Math.random() * 4)
+        ];
+        heart.style.left = Math.random() * 100 + "%";
+        document.body.appendChild(heart);
+
+        setTimeout(() => heart.remove(), 4000);
+      }, 800);
+    </script>
+  </body>
+</html>
